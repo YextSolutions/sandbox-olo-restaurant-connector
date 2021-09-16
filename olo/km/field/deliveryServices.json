@@ -1,0 +1,13 @@
+{
+  "$id": "olo_deliveryServices",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Delivery Services",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "yext/string"
+}

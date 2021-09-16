@@ -1,0 +1,13 @@
+{
+  "$id": "olo_supportsSpecialInstructions",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Supports Special Instructions",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "yext/string"
+}

@@ -1,0 +1,13 @@
+{
+  "$id": "olo_mobileURL",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Mobile URL",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "URL"
+    }
+  },
+  "typeId": "yext/string"
+}

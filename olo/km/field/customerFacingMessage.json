@@ -1,0 +1,13 @@
+{
+  "$id": "olo_customerFacingMessage",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Customer Facing Message",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "yext/string"
+}
