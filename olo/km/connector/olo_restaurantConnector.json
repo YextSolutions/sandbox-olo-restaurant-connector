@@ -1,0 +1,277 @@
+{
+  "$id": "olo_restaurantConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v2",
+  "displayName": "Olo Restaurant Connector",
+  "entityType": "restaurant",
+  "source": {
+    "sourceConfig": {
+      "apiPushConfig": {
+        "dataFormat": "JSON",
+        "enabled": true
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "Entity Container",
+      "path": "restaurants"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "Restaurant Id",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "name"
+      },
+      {
+        "type": "JSON",
+        "header": "Brand",
+        "path": "brand"
+      },
+      {
+        "type": "JSON",
+        "header": "Telephone",
+        "path": "telephone"
+      },
+      {
+        "type": "JSON",
+        "header": "Street Address",
+        "path": "streetaddress"
+      },
+      {
+        "type": "JSON",
+        "header": "City",
+        "path": "city"
+      },
+      {
+        "type": "JSON",
+        "header": "State",
+        "path": "state"
+      },
+      {
+        "type": "JSON",
+        "header": "ZIP",
+        "path": "zip"
+      },
+      {
+        "type": "JSON",
+        "header": "Country",
+        "path": "country"
+      },
+      {
+        "type": "JSON",
+        "header": "URL",
+        "path": "url"
+      },
+      {
+        "type": "JSON",
+        "header": "Hours",
+        "path": "calendar.ranges"
+      },
+      {
+        "type": "JSON",
+        "header": "Mobile URL",
+        "path": "mobileurl"
+      },
+      {
+        "type": "JSON",
+        "header": "External Reference Id",
+        "path": "extref"
+      },
+      {
+        "type": "JSON",
+        "header": "Advance Ordering Only",
+        "path": "advanceonly"
+      },
+      {
+        "type": "JSON",
+        "header": "Days to Order in Advance",
+        "path": "advanceorderdays"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Coupons",
+        "path": "supportscoupons"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Loyalty",
+        "path": "supportsloyalty"
+      },
+      {
+        "type": "JSON",
+        "header": "Payment Options",
+        "path": "supportedcardtypes"
+      },
+      {
+        "type": "JSON",
+        "header": "Delivery Services",
+        "path": "candeliver"
+      },
+      {
+        "type": "JSON",
+        "header": "Pickup Available",
+        "path": "canpickey"
+      },
+      {
+        "type": "JSON",
+        "header": "Curbside Pickup",
+        "path": "supportscurbside"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Dispatch",
+        "path": "supportsdispatch"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Dine-in",
+        "path": "supportsdinein"
+      },
+      {
+        "type": "JSON",
+        "header": "Delivery Range",
+        "path": "deliveryarea"
+      },
+      {
+        "type": "JSON",
+        "header": "Minimum Delivery Price",
+        "path": "minimumdeliveryorder"
+      },
+      {
+        "type": "JSON",
+        "header": "Minimum Pickup Order",
+        "path": "minimumpickuporder"
+      },
+      {
+        "type": "JSON",
+        "header": "Max Pay In-Store Order",
+        "path": "maximumpayinstoreorder"
+      },
+      {
+        "type": "JSON",
+        "header": "Delivery Fee",
+        "path": "deliveryfee"
+      },
+      {
+        "type": "JSON",
+        "header": "Suports Tip",
+        "path": "supportstip"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Special Instructions",
+        "path": "supportsspecialinstructions"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Guest Ordering",
+        "path": "supportsguestordering"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Online Ordering",
+        "path": "supportsonlineordering"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Feedback",
+        "path": "supportsfeedback"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Split Payments",
+        "path": "supportssplitpayments"
+      },
+      {
+        "type": "JSON",
+        "header": "Is Available",
+        "path": "isavailable"
+      },
+      {
+        "type": "JSON",
+        "header": "Customer Facing Message",
+        "path": "customerfacingmessage"
+      },
+      {
+        "type": "JSON",
+        "header": "Supports Drive-thru",
+        "path": "supportsdrivethru"
+      }
+    ]
+  },
+  "mappings": [
+    {
+      "field": "address",
+      "header": "ZIP",
+      "subfieldPath": [
+        {
+          "name": "postalCode"
+        }
+      ]
+    },
+    {
+      "field": "mainPhone",
+      "header": "Telephone",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "State",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ]
+    },
+    {
+      "field": "entityId",
+      "header": "Restaurant Id",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "Street Address",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Country",
+      "subfieldPath": [
+        {
+          "name": "countryCode"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "City",
+      "subfieldPath": [
+        {
+          "name": "city"
+        }
+      ]
+    },
+    {
+      "field": "websiteUrl",
+      "header": "URL",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    }
+  ]
+}
