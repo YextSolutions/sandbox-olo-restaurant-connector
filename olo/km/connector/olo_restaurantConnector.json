@@ -203,6 +203,19 @@
       }
     ]
   },
+  "transforms": [
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Payment Options"
+          ]
+        },
+        "plugin": "formatPaymentOptions",
+        "function": "formatPaymentOptions"
+      }
+    }
+  ],
   "mappings": [
     {
       "field": "address",
