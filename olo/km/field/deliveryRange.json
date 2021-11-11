@@ -1,11 +1,13 @@
 {
-  "$id": "olo_deliveryRange",
+  "$id": "olo_deliveryArea",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "displayName": "Delivery Range",
+  "displayName": "Delivery Area",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {
-    "decimalType": {}
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
   },
-  "typeId": "decimal"
+  "typeId": "string"
 }
