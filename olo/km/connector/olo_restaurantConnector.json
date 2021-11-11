@@ -6,7 +6,6 @@
   "source": {
     "sourceConfig": {
       "apiPushConfig": {
-        "app": "79582",
         "dataFormat": "JSON",
         "enabled": true
       }
@@ -273,10 +272,141 @@
       "field": "name",
       "header": "Name",
       "subfieldPath": []
+    },
+    {
+      "field": "olo_brand",
+      "header": "Brand",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_mobileURL",
+      "header": "Mobile URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_externalReferenceID",
+      "header": "External Reference Id",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_advanceOrderingOnly",
+      "header": "Advance Ordering Only",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_daysToOrderInAdvance",
+      "header": "Days to Order in Advance",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsCoupons",
+      "header": "Supports Coupons",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsLoyalty",
+      "header": "Supports Loyalty",
+      "subfieldPath": []
+    },
+    {
+      "field": "paymentOptions",
+      "header": "Payment Options",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_deliveryServices",
+      "header": "Delivery Services",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_pickupAvailable",
+      "header": "Pickup Available",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_curbsidePickup",
+      "header": "Curbside Pickup",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsDispatch",
+      "header": "Supports Dispatch",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsDinein",
+      "header": "Supports Dine-in",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_deliveryRange",
+      "header": "Delivery Range",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_minimumDeliveryPrice",
+      "header": "Minimum Delivery Price",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_minimumPickupOrder",
+      "header": "Minimum Pickup Order",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_maximumPayInstoreOrder",
+      "header": "Max Pay In-Store Order",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_deliveryFee",
+      "header": "Delivery Fee",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsTip",
+      "header": "Suports Tip",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsSpecialInstructions",
+      "header": "Supports Special Instructions",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsGuestOrdering",
+      "header": "Supports Guest Ordering",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsOnlineOrdering",
+      "header": "Supports Online Ordering",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsFeedback",
+      "header": "Supports Feedback",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsSplitPayments",
+      "header": "Supports Split Payments",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_isAvailable",
+      "header": "Is Available",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_customerFacingMessage",
+      "header": "Customer Facing Message",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsDrivethru",
+      "header": "Supports Drive-thru",
+      "subfieldPath": []
     }
-  ],
-  "scheduleConfig": {
-    "useSourceSchedule": true,
-    "runMode": "DEFAULT"
-  }
+  ]
 }
