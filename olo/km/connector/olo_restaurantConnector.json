@@ -69,11 +69,6 @@
       },
       {
         "type": "JSON",
-        "header": "Hours",
-        "path": "calendar.ranges"
-      },
-      {
-        "type": "JSON",
         "header": "Mobile URL",
         "path": "mobileurl"
       },
@@ -201,6 +196,286 @@
         "type": "JSON",
         "header": "Supports Drive-thru",
         "path": "supportsdrivethru"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Sunday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Sunday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Monday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Monday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Tuesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Tuesday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Wednesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Wednesday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Thursday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Thursday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Friday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Friday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Saturday Start",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar - Saturday End",
+        "path": "calendars[?type\u003d\u003d\u0027business\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Sunday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Sunday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Monday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Monday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Tuesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Tuesday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Wednesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Wednesday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Thursday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Thursday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Friday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Friday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Saturday Start",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Delivery - Saturday End",
+        "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Sunday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Sunday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Monday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Monday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Tuesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Tuesday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Wednesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Wednesday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Thursday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Thursday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Friday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Friday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Saturday Start",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Curbside Pickup - Saturday End",
+        "path": "calendars[?type\u003d\u003d\u0027curbsidepickup\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Sunday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Sunday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Monday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Monday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Tuesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Tuesday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Wednesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Wednesday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Thursday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Thursday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Friday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Friday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Saturday Start",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Drive-Through - Saturday End",
+        "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
       }
     ]
   },
@@ -215,6 +490,510 @@
         "plugin": "formatPaymentOptions",
         "function": "formatPaymentOptions"
       }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Sunday Start",
+        "newColumnHeader": "Sunday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Sunday End",
+        "newColumnHeader": "Sunday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Monday Start",
+        "newColumnHeader": "Monday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Monday End",
+        "newColumnHeader": "Monday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Tuesday Start",
+        "newColumnHeader": "Tuesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Tuesday End",
+        "newColumnHeader": "Tuesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Wednesday Start",
+        "newColumnHeader": "Wednesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Wednesday End",
+        "newColumnHeader": "Wednesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Thursday Start",
+        "newColumnHeader": "Thursday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Thursday End",
+        "newColumnHeader": "Thursday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Friday Start",
+        "newColumnHeader": "Friday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Friday End",
+        "newColumnHeader": "Friday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Saturday Start",
+        "newColumnHeader": "Saturday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar - Saturday End",
+        "newColumnHeader": "Saturday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Sunday Start",
+        "newColumnHeader": "Delivery Sunday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Sunday End",
+        "newColumnHeader": "Delivery Sunday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Monday Start",
+        "newColumnHeader": "Delivery Monday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Monday End",
+        "newColumnHeader": "Delivery Monday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Tuesday Start",
+        "newColumnHeader": "Delivery Tuesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Tuesday End",
+        "newColumnHeader": "Delivery Tuesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Wednesday Start",
+        "newColumnHeader": "Delivery Wednesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Wednesday End",
+        "newColumnHeader": "Delivery Wednesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Thursday Start",
+        "newColumnHeader": "Delivery Thursday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Thursday End",
+        "newColumnHeader": "Delivery Thursday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Friday Start",
+        "newColumnHeader": "Delivery Friday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Friday End",
+        "newColumnHeader": "Delivery Friday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Saturday Start",
+        "newColumnHeader": "Delivery Saturday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Delivery - Saturday End",
+        "newColumnHeader": "Delivery Saturday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Sunday Start",
+        "newColumnHeader": "Drive Thru Sunday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Sunday End",
+        "newColumnHeader": "Drive Thru Sunday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Monday Start",
+        "newColumnHeader": "Drive Thru Monday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Monday End",
+        "newColumnHeader": "Drive Thru Monday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Tuesday Start",
+        "newColumnHeader": "Drive Thru Tuesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Tuesday End",
+        "newColumnHeader": "Drive Thru Tuesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Wednesday Start",
+        "newColumnHeader": "Drive Thru Wednesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Wednesday End",
+        "newColumnHeader": "Drive Thru Wednesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Thursday Start",
+        "newColumnHeader": "Drive Thru Thursday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Thursday End",
+        "newColumnHeader": "Drive Thru Thursday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Friday Start",
+        "newColumnHeader": "Drive Thru Friday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Friday End",
+        "newColumnHeader": "Drive Thru Friday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Saturday Start",
+        "newColumnHeader": "Drive Thru Saturday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Drive-Through - Saturday End",
+        "newColumnHeader": "Drive Thru Saturday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Sunday Start",
+        "newColumnHeader": "Curbside Pickup Sunday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Sunday End",
+        "newColumnHeader": "Curbside Pickup Sunday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Monday Start",
+        "newColumnHeader": "Curbside Pickup Monday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Monday End",
+        "newColumnHeader": "Curbside Pickup Monday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Tuesday Start",
+        "newColumnHeader": "Curbside Pickup Tuesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Tuesday End",
+        "newColumnHeader": "Curbside Pickup Tuesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Wednesday Start",
+        "newColumnHeader": "Curbside Pickup Wednesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Wednesday End",
+        "newColumnHeader": "Curbside Pickup Wednesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Thursday Start",
+        "newColumnHeader": "Curbside Pickup Thursday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Thursday End",
+        "newColumnHeader": "Curbside Pickup Thursday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Friday Start",
+        "newColumnHeader": "Curbside Pickup Friday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Friday End",
+        "newColumnHeader": "Curbside Pickup Friday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Saturday Start",
+        "newColumnHeader": "Curbside Pickup Saturday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Curbside Pickup - Saturday End",
+        "newColumnHeader": "Curbside Pickup Saturday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
     }
   ],
   "mappings": [
@@ -228,153 +1007,48 @@
       ]
     },
     {
-      "field": "mainPhone",
-      "header": "Telephone",
-      "subfieldPath": []
-    },
-    {
-      "field": "address",
-      "header": "State",
-      "subfieldPath": [
-        {
-          "name": "region"
-        }
-      ]
-    },
-    {
-      "field": "entityId",
-      "header": "Restaurant Id",
-      "subfieldPath": []
-    },
-    {
-      "field": "address",
-      "header": "Street Address",
-      "subfieldPath": [
-        {
-          "name": "line1"
-        }
-      ]
-    },
-    {
-      "field": "address",
-      "header": "Country",
-      "subfieldPath": [
-        {
-          "name": "countryCode"
-        }
-      ]
-    },
-    {
-      "field": "address",
-      "header": "City",
-      "subfieldPath": [
-        {
-          "name": "city"
-        }
-      ]
-    },
-    {
-      "field": "websiteUrl",
-      "header": "URL",
-      "subfieldPath": [
-        {
-          "name": "url"
-        }
-      ]
-    },
-    {
-      "field": "name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_brand",
-      "header": "Brand",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_mobileURL",
-      "header": "Mobile URL",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_externalReferenceID",
-      "header": "External Reference Id",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_advanceOrderingOnly",
-      "header": "Advance Ordering Only",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_daysToOrderInAdvance",
-      "header": "Days to Order in Advance",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_supportsCoupons",
-      "header": "Supports Coupons",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_supportsLoyalty",
-      "header": "Supports Loyalty",
-      "subfieldPath": []
-    },
-    {
-      "field": "paymentOptions",
-      "header": "Payment Options",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_deliveryServices",
-      "header": "Delivery Services",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_pickupAvailable",
-      "header": "Pickup Available",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_curbsidePickup",
-      "header": "Curbside Pickup",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_supportsDispatch",
-      "header": "Supports Dispatch",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_supportsDinein",
-      "header": "Supports Dine-in",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_deliveryArea",
-      "header": "Delivery Area",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_minimumDeliveryPrice",
-      "header": "Minimum Delivery Price",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_minimumPickupOrder",
-      "header": "Minimum Pickup Order",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_maximumPayInstoreOrder",
-      "header": "Max Pay In-Store Order",
-      "subfieldPath": []
-    },
-    {
       "field": "olo_deliveryFee",
       "header": "Delivery Fee",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsDrivethru",
+      "header": "Supports Drive-thru",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Wednesday End",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Thursday End",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "olo_supportsSpecialInstructions",
+      "header": "Supports Special Instructions",
       "subfieldPath": []
     },
     {
@@ -383,28 +1057,38 @@
       "subfieldPath": []
     },
     {
-      "field": "olo_supportsSpecialInstructions",
-      "header": "Supports Special Instructions",
-      "subfieldPath": []
+      "field": "hours",
+      "header": "Friday End",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
     },
     {
-      "field": "olo_supportsGuestOrdering",
-      "header": "Supports Guest Ordering",
-      "subfieldPath": []
+      "field": "hours",
+      "header": "Sunday End",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
     },
     {
-      "field": "olo_supportsOnlineOrdering",
-      "header": "Supports Online Ordering",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_supportsFeedback",
-      "header": "Supports Feedback",
-      "subfieldPath": []
-    },
-    {
-      "field": "olo_supportsSplitPayments",
-      "header": "Supports Split Payments",
+      "field": "name",
+      "header": "Name",
       "subfieldPath": []
     },
     {
@@ -418,9 +1102,944 @@
       "subfieldPath": []
     },
     {
-      "field": "olo_supportsDrivethru",
-      "header": "Supports Drive-thru",
+      "field": "paymentOptions",
+      "header": "Payment Options",
       "subfieldPath": []
+    },
+    {
+      "field": "olo_pickupAvailable",
+      "header": "Pickup Available",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_minimumPickupOrder",
+      "header": "Minimum Pickup Order",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_minimumDeliveryPrice",
+      "header": "Minimum Delivery Price",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Tuesday Start",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "City",
+      "subfieldPath": [
+        {
+          "name": "city"
+        }
+      ]
+    },
+    {
+      "field": "olo_supportsOnlineOrdering",
+      "header": "Supports Online Ordering",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Friday Start",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "olo_brand",
+      "header": "Brand",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Saturday Start",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "State",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ]
+    },
+    {
+      "field": "olo_supportsCoupons",
+      "header": "Supports Coupons",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_maximumPayInstoreOrder",
+      "header": "Max Pay In-Store Order",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Saturday End",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Tuesday End",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Country",
+      "subfieldPath": [
+        {
+          "name": "countryCode"
+        }
+      ]
+    },
+    {
+      "field": "olo_supportsDispatch",
+      "header": "Supports Dispatch",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsLoyalty",
+      "header": "Supports Loyalty",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Monday Start",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "olo_mobileURL",
+      "header": "Mobile URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "mainPhone",
+      "header": "Telephone",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_daysToOrderInAdvance",
+      "header": "Days to Order in Advance",
+      "subfieldPath": []
+    },
+    {
+      "field": "websiteUrl",
+      "header": "URL",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "olo_deliveryServices",
+      "header": "Delivery Services",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_curbsidePickup",
+      "header": "Curbside Pickup",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Thursday Start",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Wednesday Start",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Street Address",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ]
+    },
+    {
+      "field": "entityId",
+      "header": "Restaurant Id",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_advanceOrderingOnly",
+      "header": "Advance Ordering Only",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsSplitPayments",
+      "header": "Supports Split Payments",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsFeedback",
+      "header": "Supports Feedback",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsGuestOrdering",
+      "header": "Supports Guest Ordering",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_externalReferenceID",
+      "header": "External Reference Id",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Monday End",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "olo_deliveryArea",
+      "header": "Delivery Area",
+      "subfieldPath": []
+    },
+    {
+      "field": "olo_supportsDinein",
+      "header": "Supports Dine-in",
+      "subfieldPath": []
+    },
+    {
+      "field": "hours",
+      "header": "Sunday Start",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Sunday Start",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Sunday End",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Monday Start",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Monday End",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Tuesday Start",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Tuesday End",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Wednesday Start",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Wednesday End",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Thursday Start",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Thursday End",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Friday Start",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Friday End",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Saturday Start",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Delivery Saturday End",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Sunday Start",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Sunday End",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Monday Start",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Monday End",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Tuesday Start",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Tuesday End",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Wednesday Start",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Wednesday End",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Thursday Start",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Thursday End",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Friday Start",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Friday End",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Saturday Start",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Curbside Pickup Saturday End",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Sunday Start",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Sunday End",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Monday Start",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Monday End",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Tuesday Start",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Tuesday End",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Wednesday Start",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Wednesday End",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Thursday Start",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Thursday End",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Friday Start",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Friday End",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Saturday Start",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Drive Thru Saturday End",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
     }
   ]
 }
