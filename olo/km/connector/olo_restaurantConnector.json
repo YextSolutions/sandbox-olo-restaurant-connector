@@ -16,7 +16,7 @@
       "header": "Entity Container",
       "path": "restaurants"
     },
-"selectors": [
+    "selectors": [
       {
         "type": "JSON",
         "header": "Restaurant Id",
@@ -559,6 +559,321 @@
         },
         "plugin": "formatPaymentOptions",
         "function": "formatPaymentOptions"
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Sunday Start"
+        ],
+        "newColumnHeader": "Sunday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Monday Start"
+        ],
+        "newColumnHeader": "Monday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Tuesday Start"
+        ],
+        "newColumnHeader": "Tuesday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Wednesday Start"
+        ],
+        "newColumnHeader": "Wednesday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Thursday Start"
+        ],
+        "newColumnHeader": "Thursday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Friday Start"
+        ],
+        "newColumnHeader": "Friday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar - Saturday Start"
+        ],
+        "newColumnHeader": "Saturday - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Sunday Start"
+        ],
+        "newColumnHeader": "Sunday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Monday Start"
+        ],
+        "newColumnHeader": "Monday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Tuesday Start"
+        ],
+        "newColumnHeader": "Tuesday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Wednesday Start"
+        ],
+        "newColumnHeader": "Wednesday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Thursday Start"
+        ],
+        "newColumnHeader": "Thursday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Friday Start"
+        ],
+        "newColumnHeader": "Friday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Delivery - Saturday Start"
+        ],
+        "newColumnHeader": "Saturday Delivery - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Sunday Start"
+        ],
+        "newColumnHeader": "Sunday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Monday Start"
+        ],
+        "newColumnHeader": "Monday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Tuesday Start"
+        ],
+        "newColumnHeader": "Tuesday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Wednesday Start"
+        ],
+        "newColumnHeader": "Wednesday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Thursday Start"
+        ],
+        "newColumnHeader": "Thursday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Friday Start"
+        ],
+        "newColumnHeader": "Friday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Takeout - Saturday Start"
+        ],
+        "newColumnHeader": "Saturday Takeout - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Sunday Start"
+        ],
+        "newColumnHeader": "Sunday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Monday Start"
+        ],
+        "newColumnHeader": "Monday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Tuesday Start"
+        ],
+        "newColumnHeader": "Tuesday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Wednesday Start"
+        ],
+        "newColumnHeader": "Wednesday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Thursday Start"
+        ],
+        "newColumnHeader": "Thursday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Friday Start"
+        ],
+        "newColumnHeader": "Friday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Curbside Pickup - Saturday Start"
+        ],
+        "newColumnHeader": "Saturday Curbside Pickup - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Sunday Start"
+        ],
+        "newColumnHeader": "Sunday Drive-Through - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Monday Start"
+        ],
+        "newColumnHeader": "Monday Drive-Through - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Tuesday Start"
+        ],
+        "newColumnHeader": "Tuesday Drive-Through - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Wednesday Start"
+        ],
+        "newColumnHeader": "Wednesday Drive-Through - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Thursday Start"
+        ],
+        "newColumnHeader": "Thursday Drive-Through - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Friday Start"
+        ],
+        "newColumnHeader": "Friday Drive-Through - Is Closed",
+        "delimiter": ""
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Calendar Drive-Through - Saturday Start"
+        ],
+        "newColumnHeader": "Saturday Drive-Through - Is Closed",
+        "delimiter": ""
       }
     },
     {
