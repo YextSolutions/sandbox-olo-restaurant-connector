@@ -1505,6 +1505,100 @@
         "extractFrom": "OFFSET_FROM_END",
         "offsetLength": 5
       }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Sunday - Is Closed",
+            "Monday - Is Closed",
+            "Tuesday - Is Closed",
+            "Wednesday - Is Closed",
+            "Thursday - Is Closed",
+            "Friday - Is Closed",
+            "Saturday - Is Closed",
+            "Sunday Delivery - Is Closed",
+            "Monday Delivery - Is Closed",
+            "Tuesday Delivery - Is Closed",
+            "Wednesday Delivery - Is Closed",
+            "Thursday Delivery - Is Closed",
+            "Friday Delivery - Is Closed",
+            "Saturday Delivery - Is Closed",
+            "Sunday Takeout - Is Closed",
+            "Monday Takeout - Is Closed",
+            "Tuesday Takeout - Is Closed",
+            "Wednesday Takeout - Is Closed",
+            "Thursday Takeout - Is Closed",
+            "Friday Takeout - Is Closed",
+            "Saturday Takeout - Is Closed",
+            "Sunday Curbside Pickup - Is Closed",
+            "Monday Curbside Pickup - Is Closed",
+            "Tuesday Curbside Pickup - Is Closed",
+            "Wednesday Curbside Pickup - Is Closed",
+            "Thursday Curbside Pickup - Is Closed",
+            "Friday Curbside Pickup - Is Closed",
+            "Saturday Curbside Pickup - Is Closed",
+            "Sunday Drive-Through - Is Closed",
+            "Monday Drive-Through - Is Closed",
+            "Tuesday Drive-Through - Is Closed",
+            "Wednesday Drive-Through - Is Closed",
+            "Thursday Drive-Through - Is Closed",
+            "Friday Drive-Through - Is Closed",
+            "Saturday Drive-Through - Is Closed"
+          ]
+        },
+        "valueToFind": {
+          "regex": "^$"
+        },
+        "replacement": "true"
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Sunday - Is Closed",
+            "Monday - Is Closed",
+            "Tuesday - Is Closed",
+            "Wednesday - Is Closed",
+            "Thursday - Is Closed",
+            "Friday - Is Closed",
+            "Saturday - Is Closed",
+            "Sunday Delivery - Is Closed",
+            "Monday Delivery - Is Closed",
+            "Tuesday Delivery - Is Closed",
+            "Wednesday Delivery - Is Closed",
+            "Thursday Delivery - Is Closed",
+            "Friday Delivery - Is Closed",
+            "Saturday Delivery - Is Closed",
+            "Sunday Takeout - Is Closed",
+            "Monday Takeout - Is Closed",
+            "Tuesday Takeout - Is Closed",
+            "Wednesday Takeout - Is Closed",
+            "Thursday Takeout - Is Closed",
+            "Friday Takeout - Is Closed",
+            "Saturday Takeout - Is Closed",
+            "Sunday Curbside Pickup - Is Closed",
+            "Monday Curbside Pickup - Is Closed",
+            "Tuesday Curbside Pickup - Is Closed",
+            "Wednesday Curbside Pickup - Is Closed",
+            "Thursday Curbside Pickup - Is Closed",
+            "Friday Curbside Pickup - Is Closed",
+            "Saturday Curbside Pickup - Is Closed",
+            "Sunday Drive-Through - Is Closed",
+            "Monday Drive-Through - Is Closed",
+            "Tuesday Drive-Through - Is Closed",
+            "Wednesday Drive-Through - Is Closed",
+            "Thursday Drive-Through - Is Closed",
+            "Friday Drive-Through - Is Closed",
+            "Saturday Drive-Through - Is Closed"
+          ]
+        },
+        "valueToFind": {
+          "regex": "^(?!(true)$).*$"
+        },
+        "replacement": "false"
+      }
     }
   ],
   "mappings": [
@@ -2759,6 +2853,426 @@
         },
         {
           "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Sunday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Monday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Tuesday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Wednesday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Thursday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Friday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "hours",
+      "header": "Saturday - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Sunday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Monday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Tuesday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Wednesday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Thursday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Friday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "deliveryHours",
+      "header": "Saturday Delivery - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Sunday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Monday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Tuesday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Wednesday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Thursday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Friday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Saturday Takeout - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Sunday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Monday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Tuesday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Wednesday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Thursday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Friday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "driveThroughHours",
+      "header": "Saturday Drive-Through - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Sunday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Monday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Tuesday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Wednesday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Thursday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Friday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "isClosed"
+        }
+      ]
+    },
+    {
+      "field": "pickupHours",
+      "header": "Saturday Curbside Pickup - Is Closed",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "isClosed"
         }
       ]
     }
