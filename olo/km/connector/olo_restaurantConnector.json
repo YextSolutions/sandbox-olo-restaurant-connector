@@ -16,7 +16,7 @@
       "header": "Entity Container",
       "path": "restaurants"
     },
-    "selectors": [
+"selectors": [
       {
         "type": "JSON",
         "header": "Restaurant Id",
@@ -336,6 +336,76 @@
         "type": "JSON",
         "header": "Calendar Delivery - Saturday End",
         "path": "calendars[?type\u003d\u003d\u0027delivery\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Sunday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Sunday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sun\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Monday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Monday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Mon\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Tuesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Tuesday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Tue\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Wednesday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Wednesday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Wed\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Thursday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Thursday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Thu\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Friday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Friday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Fri\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Saturday Start",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].start | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "Calendar Takeout - Saturday End",
+        "path": "calendars[?type\u003d\u003d\u0027carryout\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
       },
       {
         "type": "JSON",
@@ -738,6 +808,132 @@
       "extractText": {
         "inputHeader": "Calendar Delivery - Saturday End",
         "newColumnHeader": "Delivery Saturday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Sunday Start",
+        "newColumnHeader": "Takeout Sunday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Sunday End",
+        "newColumnHeader": "Takeout Sunday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Monday Start",
+        "newColumnHeader": "Takeout Monday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Monday End",
+        "newColumnHeader": "Takeout Monday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Tuesday Start",
+        "newColumnHeader": "Takeout Tuesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Tuesday End",
+        "newColumnHeader": "Takeout Tuesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Wednesday Start",
+        "newColumnHeader": "Takeout Wednesday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Wednesday End",
+        "newColumnHeader": "Takeout Wednesday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Thursday Start",
+        "newColumnHeader": "Takeout Thursday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Thursday End",
+        "newColumnHeader": "Takeout Thursday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Friday Start",
+        "newColumnHeader": "Takeout Friday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Friday End",
+        "newColumnHeader": "Takeout Friday End",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Saturday Start",
+        "newColumnHeader": "Takeout Saturday Start",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "OFFSET_FROM_END",
+        "offsetLength": 5
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Calendar Takeout - Saturday End",
+        "newColumnHeader": "Takeout Saturday End",
         "extractOperation": "ALL_TEXT_AFTER",
         "extractFrom": "OFFSET_FROM_END",
         "offsetLength": 5
@@ -1609,6 +1805,216 @@
     {
       "field": "deliveryHours",
       "header": "Delivery Saturday End",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Sunday Start",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Sunday End",
+      "subfieldPath": [
+        {
+          "name": "sunday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Monday Start",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Monday End",
+      "subfieldPath": [
+        {
+          "name": "monday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Tuesday Start",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Tuesday End",
+      "subfieldPath": [
+        {
+          "name": "tuesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Wednesday Start",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Wednesday End",
+      "subfieldPath": [
+        {
+          "name": "wednesday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Thursday Start",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Thursday End",
+      "subfieldPath": [
+        {
+          "name": "thursday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Friday Start",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Friday End",
+      "subfieldPath": [
+        {
+          "name": "friday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Saturday Start",
+      "subfieldPath": [
+        {
+          "name": "saturday"
+        },
+        {
+          "name": "openIntervals"
+        },
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "takeoutHours",
+      "header": "Takeout Saturday End",
       "subfieldPath": [
         {
           "name": "saturday"
