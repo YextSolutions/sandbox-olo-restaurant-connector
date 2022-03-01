@@ -1,7 +1,7 @@
 {
-  "$id": "restaurant.default",
+  "$id": "olo_restaurant",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Restaurant-default",
+  "name": "Olo Restaurant",
   "entityType": "restaurant",
   "fields": [
     "olo_advanceOrderingOnly",
