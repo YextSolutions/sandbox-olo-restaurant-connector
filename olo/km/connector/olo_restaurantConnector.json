@@ -6,7 +6,6 @@
   "source": {
     "sourceConfig": {
       "apiPushConfig": {
-        "app": "131001",
         "dataFormat": "JSON",
         "enabled": true
       }
@@ -546,6 +545,16 @@
         "type": "JSON",
         "header": "Calendar Drive-Through - Saturday End",
         "path": "calendars[?type\u003d\u003d\u0027drivethru\u0027].ranges[] | [?weekday\u003d\u003d\u0027Sat\u0027].end | [0]"
+      },
+      {
+        "type": "JSON",
+        "header": "latitude",
+        "path": "latitude"
+      },
+      {
+        "type": "JSON",
+        "header": "longitude",
+        "path": "longitude"
       }
     ]
   },
@@ -3275,6 +3284,24 @@
           "name": "isClosed"
         }
       ]
-    }
+    },
+    {
+      "field": "displayCoordinate",
+      "header": "latitude",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "field": "displayCoordinate",
+      "header": "longitude",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    }    
   ]
 }
